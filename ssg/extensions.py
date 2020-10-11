@@ -12,5 +12,5 @@ def load_directory(directory):
         load_module(directory.as_posix(), path.stem)
 
 def load_bundled():
-    directory = Path(__file__.parent/"extensions")
+    directory = Path(__file__).parent / "extensions"
     load_directory(directory)
